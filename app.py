@@ -50,7 +50,7 @@ with st.sidebar:
     """)
 
 # Main content
-st.title("Gemini-Powered Health Assistant")
+st.title("GenAI-Powered Health Assistant")
 st.markdown("Your AI companion for health insights, summaries, and tips.")
 
 # Create tabs for different functionalities
