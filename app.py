@@ -11,7 +11,7 @@ from agent import (
 
 # App title and description
 st.set_page_config(
-    page_title="Gemini-Powered Health Assistant",
+    page_title="GenAI-Powered Health Assistant",
     page_icon="🩺",
     layout="wide"
 )
