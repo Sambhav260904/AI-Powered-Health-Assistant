@@ -14,7 +14,7 @@ def check_api_key(api_key):
 
 def get_gemini_llm(api_key, temperature=0.7):
     return ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash",
+        model="gemini-2.5-flash",
         google_api_key=api_key,
         temperature=temperature,
         max_output_tokens=2048
@@ -93,3 +93,4 @@ def generate_health_tips(goal, lifestyle, conditions="", api_key=None):
     llm = get_gemini_llm(api_key, temperature=0.8)
     chain = LLMChain(llm=llm, prompt=prompt)
     return chain.run(goal=goal, lifestyle=lifestyle, conditions=conditions)
+
