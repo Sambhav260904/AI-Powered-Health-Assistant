@@ -45,7 +45,7 @@ def get_gemini_llm(api_key, temperature=0.7, max_output_tokens=2048):
     """
     if ChatGoogleGenerativeAI is not None:
         return ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash",
+            model="gemini-2.5-flash",
             google_api_key=api_key,
             temperature=temperature,
             max_output_tokens=max_output_tokens
@@ -143,3 +143,4 @@ HEALTH TIPS:
         full_prompt = template.format(goal=goal, lifestyle=lifestyle, conditions=conditions)
         response = genai.generate_text(model="gemini-1.5", prompt=full_prompt)
         return getattr(response, "output", getattr(response, "text", str(response)))
+
