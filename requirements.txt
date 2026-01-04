@@ -1,5 +1,9 @@
-streamlit
-langchain
-langchain-google-genai
-google-genai
+streamlit==1.38.0
+google-generativeai==0.3.2
+langchain==0.2.14
+langchain-core==0.2.33
+langchain-community==0.2.10
+langchain-google-genai==1.0.9
 python-dotenv
+pandas
+requests
